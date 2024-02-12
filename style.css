@@ -213,3 +213,6 @@ th, td {
     color: var(--dark-icon-color);
   }
   
+  .h1{
+    padding: 20px;
+  }
