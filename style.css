@@ -157,7 +157,6 @@ th, td {
 }
 
 .btn {
-    background-color: #fff;
     width: 5em;
     height: 3em;
     border-radius: 4em;
@@ -170,15 +169,33 @@ th, td {
     align-items: center;
     cursor: pointer;
 }
+.dark-theme .btn {
+    background-color: #dadada;
+}
 
-.btn__indicator {
-    background-color: #fff;
+.light-theme .btn {
+    background-color: #000000;
+}
+
+.dark-theme .btn__indicator {
+    background-color: #000000;
     width: 2em;
     height: 2em;
     border-radius: 50%;
     position: absolute;
     box-shadow: 0 3px 15px rgba(0,0,0, .2);
     transition: transform .3s ease;
+    transform: translateX(3em); 
+}
+.light-theme .btn__indicator {
+    background-color: #dadada;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: 0 3px 15px rgba(0,0,0, .2);
+    transition: transform .3s ease;
+    transform: translateX(0em);
 }
 @media (max-width: 600px) {
     .card-content {
